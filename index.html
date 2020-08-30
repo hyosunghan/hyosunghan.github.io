@@ -40,12 +40,6 @@
             font-family: fantasy;
         }
 
-        /*版权信息，输入框-字体*/
-        .copyright, .visits, input {
-            font-family: times;
-            color: #000000;
-        }
-
         /*按钮图标居左*/
         .son {
             float: left;
@@ -76,7 +70,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="https://github.com/hyosunghan">
-                <img alt="Brand" class="img-circle" src="https://cdn.jsdelivr.net/gh/hyosunghan/index/index/img/github1.jpg" style="width: 20px;height: 20px;">
+                <img alt="Brand" class="img-circle" src="https://cdn.jsdelivr.net/gh/hyosunghan/index/index/img/title.png" style="width: 20px;height: 20px;">
             </a>
         </div>
 
@@ -122,19 +116,24 @@
                 </div>
                 <button type="submit" class="btn btn-default">搜索</button>
             </form>
-<!--            <ul class="nav navbar-nav navbar-right">-->
-<!--                <li><a href="#">Link</a></li>-->
-<!--                <li class="dropdown">-->
-<!--                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>-->
-<!--                    <ul class="dropdown-menu">-->
-<!--                        <li><a href="#">Action</a></li>-->
-<!--                        <li><a href="#">Another action</a></li>-->
-<!--                        <li><a href="#">Something else here</a></li>-->
-<!--                        <li role="separator" class="divider"></li>-->
-<!--                        <li><a href="#">Separated link</a></li>-->
-<!--                    </ul>-->
-<!--                </li>-->
-<!--            </ul>-->
+            <ul class="nav navbar-nav navbar-right">
+                <li><a data-toggle="modal" data-target="#myModal">
+                    <span class="glyphicon glyphicon-user"></span> 关于
+                </a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="glyphicon glyphicon-info-sign"></span>
+                        其他<span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
@@ -305,20 +304,16 @@
     </div>
     <br> <br>
     <div class="row">
-        <!-- 版权声明 -->
-        <div align="center" class="copyright">
-            版权 &copy; <a data-toggle="modal" data-target="#myModal"><em>HyosungHan</em></a>所有
-        </div>
         <!-- 访问统计 -->
         <div align="center" class="visits">
-            <span id="busuanzi_container_page_pv" style="display:none">
-                本页访问 <span id="busuanzi_value_page_pv"></span> 次
+            <span id="busuanzi_container_site_uv" style="display:none">
+                本站访问 <span id="busuanzi_value_site_uv"></span> 人
             </span>
             <span id="busuanzi_container_site_pv" style="display:none">
                 / 本站访问 <span id="busuanzi_value_site_pv"></span> 次
             </span>
-            <span id="busuanzi_container_site_uv" style="display:none">
-                / 本站访问 <span id="busuanzi_value_site_uv"></span> 人
+            <span id="busuanzi_container_page_pv" style="display:none">
+                / 本页访问 <span id="busuanzi_value_page_pv"></span> 次
             </span>
         </div>
         <!-- 个人信息模态窗口 -->
