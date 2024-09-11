@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <!-- 引入 Bootstrap 5 样式表 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- bootstrap图标库 eg:bi-xxx -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- 引入 Font Awesome 样式表 eg:fa-xxx -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        .list-group-item {
+            border: none !important;
+        }
+    </style>
+</head>
+<body>
+<!-- 导航栏 -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="#"><i class="fas fa-globe me-2"></i> 导航页</a>
+<!--        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--            <span class="navbar-toggler-icon"></span>-->
+<!--        </button>-->
+<!--        <div class="collapse navbar-collapse" id="navbarNav">-->
+<!--            <ul class="navbar-nav d-flex w-100">-->
+<!--                <li class="nav-item flex-grow-1 text-center">-->
+<!--                    <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-home"></i> 首页</a>-->
+<!--                </li>-->
+<!--                <li class="nav-item flex-grow-1 text-center">-->
+<!--                    <a class="nav-link" href="#"><i class="fas fa-blog"></i> 技术博客</a>-->
+<!--                </li>-->
+<!--                <li class="nav-item flex-grow-1 text-center dropdown">-->
+<!--                    &lt;!&ndash; 下拉菜单触发器 &ndash;&gt;-->
+<!--                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">-->
+<!--                        <i class="fas fa-newspaper"></i> 行业新闻-->
+<!--                    </a>-->
+<!--                    &lt;!&ndash; 下拉菜单 &ndash;&gt;-->
+<!--                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">-->
+<!--                        <li><a class="dropdown-item" href="#">新闻1</a></li>-->
+<!--                        <li><a class="dropdown-item" href="#">新闻2</a></li>-->
+<!--                        <li><hr class="dropdown-divider"></li>-->
+<!--                        <li><a class="dropdown-item" href="#">新闻3</a></li>-->
+<!--                    </ul>-->
+<!--                </li>-->
+<!--                <li class="nav-item flex-grow-1 text-center">-->
+<!--                    <a class="nav-link" href="#"><i class="fas fa-phone-alt"></i> 联系我们</a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
+    </div>
+</nav>
+
+<!-- 主内容 -->
+<div class="container mt-5">
+    <!-- 搜索框表单 -->
+    <form id="searchForm" action="https://www.google.com/search" method="get" target="_blank">
+        <div class="input-group">
+            <!-- 下拉菜单按钮 -->
+            <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="searchEngineDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi-microsoft"></i> 必应
+            </button>
+            <!-- 下拉菜单项 -->
+            <ul class="dropdown-menu" aria-labelledby="searchEngineDropdown">
+                <li><a class="dropdown-item" href="#" data-engine="https://www.bing.com/search" data-param="q"><i class="bi-microsoft"></i> 必应</a></li>
+                <li><a class="dropdown-item" href="#" data-engine="https://www.google.com/search" data-param="q"><i class="bi-google"></i> 谷歌</a></li>
+                <li><a class="dropdown-item" href="#" data-engine="https://www.baidu.com/s" data-param="wd"><i class="fa fa-paw"></i> 百度</a></li>
+            </ul>
+            <!-- 搜索框输入 -->
+            <input type="text" class="form-control" name="q" placeholder="输入搜索内容..." aria-label="搜索内容">
+            <!-- 搜索按钮 -->
+            <button class="btn btn-primary" type="submit">搜索</button>
+        </div>
+    </form>
+</div>
+
+<div class="container mt-5">
+<!--    <p>开发工具</p>-->
+    <ul class="list-group list-group-horizontal flex-wrap">
+        <li class="list-group-item flex-fill text-center"><a href="https://www.oracle.com/" target="_blank"><i class="bi-cup-hot-fill"></i> Oracle</a></li>
+        <li class="list-group-item flex-fill text-center"><a href="https://www.apache.org/" target="_blank"><i class="bi-vector-pen"></i> Apache</a></li>
+        <li class="list-group-item flex-fill text-center"><a href="https://www.mysql.com/" target="_blank"><i class="bi-server"></i> Mysql</a></li>
+        <li class="list-group-item flex-fill text-center"><a href="https://www.mongodb.com/" target="_blank"><i class="bi-server"></i> Mongodb</a></li>
+        <li class="list-group-item flex-fill text-center"><a href="https://www.redis.com/" target="_blank"><i class="bi-stack"></i> Redis</a></li>
+        <li class="list-group-item flex-fill text-center"><a href="https://www.spring.io/" target="_blank"><i class="fab fa-envira"></i> Spring</a></li>
+        <li class="list-group-item flex-fill text-center"><a href="https://www.baomidou.com/" target="_blank"><i class="fa fa-american-sign-language-interpreting"></i> MyBatisPlus</a></li>
+        <li class="list-group-item flex-fill text-center"><a href="https://www.mvnrepository.com/" target="_blank"><i class="bi-markdown-fill"></i> MvnRepository</a></li>
+        <li class="list-group-item flex-fill text-center"><a href="https://developer.aliyun.com/mvn/guide" target="_blank"><i class="bi-markdown-fill"></i> MvnAliyun</a></li>
+        <li class="list-group-item flex-fill text-center"><a href="https://www.kubernetes.io/" target="_blank"><i class="bi-octagon-fill"></i> Kubernetes</a></li>
+        <li class="list-group-item flex-fill text-center"><a href="https://www.kernel.org/" target="_blank"><i class="fab fa-linux"></i> Linux</a></li>
+        <li class="list-group-item flex-fill text-center"><a href="https://www.adminlte.io" target="_blank"><i class="fa fa-font"></i> Adminlte</a></li>
+        <li class="list-group-item flex-fill text-center"><a href="https://www.sdkman.io" target="_blank"> Sdkman</a></li>
+        <li class="list-group-item flex-fill text-center"><a href="https://www.hutool.cn" target="_blank"> Hutool</a></li>
+        <li class="list-group-item flex-fill text-center"><a href="https://arthas.aliyun.com/doc/" target="_blank"><i class="fa fa-font"></i> Arthas</a></li>
+        <li class="list-group-item flex-fill text-center"><a href="https://openapi-map.apihandyman.io" target="_blank"> OpenapiMap</a></li>
+        <li class="list-group-item flex-fill text-center"><a href="https://www.trello.com/" target="_blank"><i class="bi-trello"></i> Trello</a></li>
+        <li class="list-group-item flex-fill text-center"><a href="https://www.github.com/" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+        <li class="list-group-item flex-fill text-center"><a href="https://www.stackoverflow.com/" target="_blank"><i class="fab fa-stack-overflow"></i> Stack Overflow</a></li>
+        <li class="list-group-item flex-fill text-center"><a href="https://v5.bootcss.com/" target="_blank"><i class="bi-bootstrap-fill"></i> Bootstrap</a></li>
+        <li class="list-group-item flex-fill text-center"><a href="https://www.docker.com/" target="_blank"><i class="bi-boxes"></i> Docker</a></li>
+        <li class="list-group-item flex-fill text-center"><a href="https://www.json.org/" target="_blank"><i class="bi-braces"></i> Json</a></li>
+        <li class="list-group-item flex-fill text-center"><a href="https://www.alipay.com/" target="_blank"><i class="bi-alipay"></i> 支付宝</a></li>
+        <li class="list-group-item flex-fill text-center"><a href="https://www.icloud.com.cn/" target="_blank"><i class="bi-apple"></i> iCloud</a></li>
+        <li class="list-group-item flex-fill text-center"><a href="https://www.weibo.com/" target="_blank"><i class="fab fa-weibo"></i> 微博</a></li>
+        <li class="list-group-item flex-fill text-center"><a href="https://weread.qq.com/" target="_blank"><i class="bi-book-fill"></i> 微信读书</a></li>
+        <li class="list-group-item flex-fill text-center"><a href="https://v.qq.com/" target="_blank"><i class="bi-film"></i> 腾讯视频</a></li>
+        <li class="list-group-item flex-fill text-center"><a href="https://www.google.com/" target="_blank"><i class="bi-google"></i> 谷歌</a></li>
+        <li class="list-group-item flex-fill text-center"><a href="https://www.microsoft.com/" target="_blank"><i class="bi-microsoft"></i> 微软</a></li>
+        <li class="list-group-item flex-fill text-center"><a href="https://www.v2aky.net" target="_blank"><i class="bi-triangle-fill"></i> V2aky</a></li>
+        <li class="list-group-item flex-fill text-center"><a href="https://git.unlock-music.dev/um/web" target="_blank"><i class="bi-unlock-fill"></i> UnlockMusic</a></li>
+        <li class="list-group-item flex-fill text-center"><a href="https://xclient.info" target="_blank"> Xclient</a></li>
+        <li class="list-group-item flex-fill text-center"><a href="https://www.aconvert.com/cn" target="_blank"><i class="bi-repeat"></i> Aconvert</a></li>
+        <li class="list-group-item flex-fill text-center"><a href="https://flac.life" target="_blank"><i class="bi-file-music-fill"></i> Flac</a></li>
+        <li class="list-group-item flex-fill text-center"><a href="https://wallhaven.cc" target="_blank"><i class="bi-file-image-fill"></i> Wallhaven</a></li>
+        <li class="list-group-item flex-fill text-center"><a href="https://copilot.microsoft.com" target="_blank"> Copilot</a></li>
+        <li class="list-group-item flex-fill text-center"><a href="https://3.jetbra.in" target="_blank"> Jetbra</a></li>
+        <li class="list-group-item flex-fill text-center"><a href="https://sandbox.kie.org/0.23.0/#/" target="_blank"> KIE</a></li>
+        <li class="list-group-item flex-fill text-center"><a href="https://editor-next.swagger.io/" target="_blank"> Swagger</a></li>
+        <li class="list-group-item flex-fill text-center"><a href="https://www.patorjk.com/software/taag/#p=display&f=Graffiti&t=Type Something" target="_blank"> xxxx</a></li>
+        <li class="list-group-item flex-fill text-center"><a href="https://www.cs.usfca.edu/~galles/visualization/Algorithms.html" target="_blank"> Algorithms</a></li>
+        <li class="list-group-item flex-fill text-center"><a href="https://labelary.com/viewer.html" target="_blank"> Labelary</a></li>
+        <li class="list-group-item flex-fill text-center"><a href="https://landscape.cncf.io" target="_blank"> CNCF</a></li>
+    </ul>
+</div>
+
+<!-- 引入 Bootstrap 5 JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<script>
+    // 处理下拉菜单选择
+    document.querySelectorAll('.dropdown-item').forEach(item => {
+        item.addEventListener('click', function(event) {
+            event.preventDefault();  // 阻止默认链接跳转
+            const selectedEngine = this.getAttribute('data-engine'); // 获取选定的搜索引擎URL
+            const searchParam = this.getAttribute('data-param'); // 获取搜索参数名称
+            const searchForm = document.getElementById('searchForm');
+
+            // 更新表单的 action URL 和输入框的 name
+            searchForm.action = selectedEngine;
+            searchForm.querySelector('input[name]').name = searchParam;
+
+            // // 更新按钮文本
+            // document.getElementById('searchEngineDropdown').textContent = this.textContent;
+            // 更新按钮文本并保留图标
+            const selectedIcon = this.querySelector('i').outerHTML; // 获取选定的图标HTML
+            document.getElementById('searchEngineDropdown').innerHTML = `${selectedIcon} ${this.textContent.trim()}`;
+        });
+    });
+</script>
+</body>
+</html>
