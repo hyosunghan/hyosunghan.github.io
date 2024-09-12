@@ -12,7 +12,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         .list-group-item {
-            border: none !important;
+            border: none !important; /* 去除栏栅边框 */
+        }
+        .list-group-item {
+            text-decoration: none; /* 去除下划线 */
         }
     </style>
 </head>
@@ -20,7 +23,7 @@
 <!-- 主内容 -->
 <div class="container mt-5">
     <!-- 搜索框表单 -->
-    <form id="searchForm" action="https://www.google.com/search" method="get" target="_blank">
+    <form id="searchForm" action="https://www.bing.com/search" method="get" target="_blank">
         <div class="input-group">
             <!-- 下拉菜单按钮 -->
             <button class="btn btn-primary dropdown-toggle" type="button" id="searchEngineDropdown" data-bs-toggle="dropdown" aria-expanded="false">
