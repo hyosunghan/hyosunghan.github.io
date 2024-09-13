@@ -28,27 +28,29 @@
 <body>
 <!-- 主内容 -->
 <div class="container mt-5">
-    <!-- 搜索框表单 -->
-    <form id="searchForm" action="https://www.bing.com/search" method="get" target="_blank">
-        <div class="input-group">
-            <!-- 下拉菜单按钮 -->
-            <button class="btn btn-outline-primary dropdown-toggle" type="button" id="searchEngineDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="bi-bing"></i> 必应<i class="fas fa-delphin"></i>
-            </button>
-            <!-- 下拉菜单项 -->
-            <ul class="dropdown-menu border border-primary" aria-labelledby="searchEngineDropdown">
-                <li><a class="dropdown-item text-primary" href="#" data-engine="https://www.bing.com/search" data-param="q"><i class="bi-bing"></i> 必应</a></li>
-                <li><a class="dropdown-item text-primary" href="#" data-engine="https://www.google.com/search" data-param="q"><i class="bi-google"></i> 谷歌</a></li>
-                <li><a class="dropdown-item text-primary" href="#" data-engine="https://www.baidu.com/s" data-param="wd"><i class="fa fa-paw"></i> 百度</a></li>
-                <li><a class="dropdown-item text-primary" href="#" data-engine="https://www.github.com/search" data-param="q"><i class="fab fa-github"></i> GitHub</a></li>
-                <li><a class="dropdown-item text-primary" href="#" data-engine="https://www.stackoverflow.com/search" data-param="q"><i class="fab fa-stack-overflow"></i> Stack Overflow</a></li>
-            </ul>
-            <!-- 搜索框输入 -->
-            <input type="text" class="form-control border border-primary" name="q" placeholder="" aria-label="搜索内容">
-            <!-- 搜索按钮 -->
-            <button class="btn btn-outline-primary search-submit" type="submit"><i class="fa-solid fa-magnifying-glass"></i> 搜索</button>
-        </div>
-    </form>
+    <div class="col-12  col-sm-10 offset-sm-1  col-md-8 offset-md-2  col-lg-6 offset-lg-3">
+        <!-- 搜索框表单 -->
+        <form id="searchForm" action="https://www.bing.com/search" method="get" target="_blank">
+            <div class="input-group">
+                <!-- 下拉菜单按钮 -->
+                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="searchEngineDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi-bing"></i> 必应<i class="fas fa-delphin"></i>
+                </button>
+                <!-- 下拉菜单项 -->
+                <ul class="dropdown-menu border border-primary" aria-labelledby="searchEngineDropdown">
+                    <li><a class="dropdown-item text-primary" href="#" data-engine="https://www.bing.com/search" data-param="q"><i class="bi-bing"></i> 必应</a></li>
+                    <li><a class="dropdown-item text-primary" href="#" data-engine="https://www.google.com/search" data-param="q"><i class="bi-google"></i> 谷歌</a></li>
+                    <li><a class="dropdown-item text-primary" href="#" data-engine="https://www.baidu.com/s" data-param="wd"><i class="fa fa-paw"></i> 百度</a></li>
+                    <li><a class="dropdown-item text-primary" href="#" data-engine="https://www.github.com/search" data-param="q"><i class="fab fa-github"></i> GitHub</a></li>
+                    <li><a class="dropdown-item text-primary" href="#" data-engine="https://www.stackoverflow.com/search" data-param="q"><i class="fab fa-stack-overflow"></i> Stack Overflow</a></li>
+                </ul>
+                <!-- 搜索框输入 -->
+                <input type="text" class="form-control border border-primary" name="q" placeholder="" aria-label="搜索内容">
+                <!-- 搜索按钮 -->
+                <button class="btn btn-outline-primary search-submit" type="submit"><i class="fa-solid fa-magnifying-glass"></i> 搜索</button>
+            </div>
+        </form>
+    </div>
     <br/>
     <br/>
     <ul class="list-group list-group-horizontal flex-wrap">
